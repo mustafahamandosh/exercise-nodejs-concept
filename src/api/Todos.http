@@ -1,0 +1,45 @@
+DELETE {{baseURL}}/todos/5f0a11e7-de98-4312-8d49-71f360bb6209
+Accept: application/json
+username: mustafa
+
+###
+PATCH {{baseURL}}/todos/a06c3659-8a12-42b9-af95-63cbc38eb565/done
+Content-Type: application/json
+username: mustafa
+
+###
+PUT {{baseURL}}/todos/a06c3659-8a12-42b9-af95-63cbc38eb565
+Content-Type: application/json
+username: mustafa
+
+{
+  "title": "Work updated",
+  "deadline": "2021-07-10"
+}
+
+###
+POST {{baseURL}}/todos
+Content-Type: application/json
+username: mustafa
+
+{
+  "title": "Work hard",
+  "deadline": "2021-07-10"
+}
+
+###
+GET {{baseURL}}/todos
+Accept: application/json
+username: mustafa
+
+
+###
+POST {{baseURL}}/users
+Content-Type: application/json
+
+{
+  "name": "Mustafa hamandosh",
+  "username": "mustafa"
+}
+
+###
